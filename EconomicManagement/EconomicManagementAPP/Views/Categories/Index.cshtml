@@ -7,12 +7,15 @@
 
 <h1>Categories List</h1>
 
-<a asp-action="Create" class="btn btn-primary mb-3">Create category</a>
+<a asp-action="Create" class="btn">
+     <img src="../../img/add.png" width="50" height="50"/>
+</a>
 
-<table class="table">
-    <thead>
+<div class="containerTables">
+<table class="table table-striped list-table">
+    <thead class="table-dark">
         <tr>
-            <th>Actions</th>
+            <th></th>
             <th>Name</th>
         </tr>
     </thead>
@@ -22,8 +25,9 @@
             <tr>
                 <td>
                     <input type="hidden" value="@categories.Id" class="ids" />
-                    <a class="btn btn-primary" asp-action="Modify" asp-route-id="@categories.Id">Modify</a>
-                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@categories.Id">Delete</a>
+                    <a class="btn " asp-action="Modify" asp-route-id="@categories.Id">
+                     <img src="../../img/edit.png" width="30" height="25" /> </a> 
+                    
                 </td>
 
                 <td>
@@ -34,3 +38,4 @@
         }
     </tbody>
 </table>
+</div>

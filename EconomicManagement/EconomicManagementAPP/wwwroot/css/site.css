@@ -28,4 +28,57 @@ body {
 
 .headerSpacer {
     flex: 1 1 auto;
+
+}
+
+body {
+    margin-bottom: 60px;
+   // background-image: url(https://th.bing.com/th/id/R.2a6a0e89d8477eb0e0dd3857418c7e69?rik=TDQaNYOvWjQKSw&pid=ImgRaw&r=0);
+   // background-size: cover;
+   background-color:honeydew;
+}
+footer {
+    background-color: #70EF99;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #70EF99;
+}
+
+.center-div {
+    padding-bottom: 1rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardWidth {
+    width: 700px;
+}
+
+.cardHome {
+    width: 400px;
+}
+
+.delete {
+    width: 800px;
+}
+.card-bodyD {
+    flex: 1 1 auto;
+    padding: 2rem 2rem;
+    background-color: beige;
+    text-align: center;
+}
+.list-table {
+    max-width: 500px;
+}
+.containerTables {
+    display: flex;
+    justify-content: center;
+}
+.card-header {
+    text-align: center;
+    color:black;
 }

@@ -65,11 +65,11 @@ namespace EconomicManagementAPP.Services
                                             WHERE Id = @Id", categories);
         }
 
-        public async Task Delete(int id)
-        {
-            using var connection = new SqlConnection(connectionString);
-            await connection.ExecuteAsync("DELETE  FROM Categories WHERE Id = @Id", new { id });
-        }
+        //public async Task Delete(int id)
+        //{
+        //    using var connection = new SqlConnection(connectionString);
+        //    await connection.ExecuteAsync("DELETE  FROM Categories WHERE Id = @Id", new { id });
+        //}
 
         public async Task<Categories> GetCategorieByIds(int categoryId, int userId)
         {

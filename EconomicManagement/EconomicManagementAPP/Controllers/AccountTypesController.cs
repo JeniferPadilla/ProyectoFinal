@@ -63,7 +63,6 @@ namespace EconomicManagementAPP.Controllers
             accountTypes.DbStatus = true;
             int newId = await repositorieAccountTypes.Create(accountTypes);
             // Redireccionamos a la lista
-            //return RedirectToAction("Index");
             return RedirectToAction("Create", "Accounts", new { id=newId });
         }
 

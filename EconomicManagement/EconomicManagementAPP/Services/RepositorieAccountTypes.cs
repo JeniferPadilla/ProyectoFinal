@@ -96,10 +96,12 @@ namespace EconomicManagementAPP.Services
 
         public async Task<int> GetNumberAccount(int id)
         {
-            Console.WriteLine(id);
+           
             using var connection = new SqlConnection(connectionString);
-            int numberAccount = await connection.QuerySingleAsync<int>("SELECT COUNT (AccountTypeId) AS CantidadCuentas  FROM Accounts WHERE AccountTypeId = @Id;", new { id });
-            Console.WriteLine(numberAccount);
+            int numberAccount = await connection.QuerySingleAsync<int>("SELECT COUNT (AccountTypeId) " +
+                                                                 "AS CantidadCuentas  FROM Accounts" +
+                                                                   " WHERE AccountTypeId = @Id;", new { id });
+           
 
             return numberAccount;
         }

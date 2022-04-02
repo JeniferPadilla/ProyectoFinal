@@ -10,7 +10,7 @@ namespace EconomicManagementAPP.Interface
         Task<IEnumerable<Categories>> GetCategories(int userId);
         Task Modify(Categories categories);
         Task<Categories> GetCategoriesById(int id); // para el modify
-        Task Delete(int id);
+       // Task Delete(int id);
         Task<Categories> GetCategorieByIds( int categoryId, int userId);
     }
 }

@@ -1,34 +1,35 @@
 ﻿@model OperationTypes
 
 
-
 @{
-ViewData["Title"] = "Modify Operation Types";
+    ViewData["Title"] = "Modify Operation Types";
 }
-
-
-
-<h1>Modify account type: @Model.Description</h1>
-
-
 
 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
+<br />
+<br />
+<div class="modify">
+    <div class="card text-dark bg-light mb-3 modifyOp ">
+        <div class="card-header" style="text-align: center; color: midnightblue; "><h1>Modify account type: @Model.Description </h1></div>
+        <div class="card-body">
 
+            <form asp-action="Modify">
+                <input type="hidden" asp-for="Id" />
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label"></label>
+                    <input type="text" asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div style="text-align: center">
+                    <button type="submit" class="btn btn-primary">Modify</button>
+                    <a class="btn btn-secondary" asp-action="Index">Cancel</a>
+                </div>
+            </form>
 
-<form asp-action="Modify">
-    <input type="hidden" asp-for="Id" />
-    <div class="mb-3">
-        <label asp-for="Description" class="form-label"></label>
-        <input type="text" asp-for="Description" class="form-control" />
-        <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
     </div>
-    <button type="submit" class="btn btn-primary">Modify</button>
-    <a class="btn btn-secondary" asp-action="Index">Cancel</a>
-</form>
 
-
-
-@section Scripts {
-<partial name="_ValidationScriptsPartial" />
-}
+    @section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    }

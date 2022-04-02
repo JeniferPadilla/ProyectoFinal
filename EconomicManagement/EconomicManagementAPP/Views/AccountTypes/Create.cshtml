@@ -3,21 +3,31 @@
     ViewData["Title"] = "Account types";
 }
 
-<h1>Register account type</h1>
 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-<form asp-action="Create">
-    <div class="mb-3">
-        <label asp-for="Name" class="form-label"></label>
-        <input type="text" asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"> </span>
+<br />
+<br />
+<br />
+<div class="center-div">
+    <div class="card text-dark bg-light mb-3 cardWidth ">
+        <div class="card-header"><h1> New Account Type</h1></div>
+        <div class="card-body">
+
+            <form asp-action="Create">
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label"></label>
+                    <input type="text" asp-for="Name" class="form-control" autocomplete="off" />
+                    <span asp-validation-for="Name" class="text-danger"> </span>
+                </div>
+                <div style="text-align: center">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                    <a class="btn btn-secondary" asp-controller="Home" asp-action="Index">Cancel</a>
+                </div>
+            </form>
+        </div>
     </div>
-    <button type="submit" class="btn btn-primary">Create</button>
-    <a class="btn btn-secondary" asp-controller="Home" asp-action="Index">Cancel</a>
-
-
-</form>
+</div>
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial"/>
-}
+<partial name="_ValidationScriptsPartial" />
+    }

@@ -2439,11 +2439,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jkpadillac\\Desktop\\1\\EconomicManagement\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
+      "projectUniqueName": "C:\\Users\\jkpadillac\\Desktop\\Proyecto\\EconomicManagement\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
       "projectName": "EconomicManagementAPP",
-      "projectPath": "C:\\Users\\jkpadillac\\Desktop\\1\\EconomicManagement\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
+      "projectPath": "C:\\Users\\jkpadillac\\Desktop\\Proyecto\\EconomicManagement\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
       "packagesPath": "C:\\Users\\jkpadillac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jkpadillac\\Desktop\\1\\EconomicManagement\\EconomicManagementAPP\\obj\\",
+      "outputPath": "C:\\Users\\jkpadillac\\Desktop\\Proyecto\\EconomicManagement\\EconomicManagementAPP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jkpadillac\\AppData\\Roaming\\NuGet\\NuGet.Config",

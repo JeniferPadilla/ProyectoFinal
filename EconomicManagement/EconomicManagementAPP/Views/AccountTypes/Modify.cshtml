@@ -4,22 +4,31 @@
     ViewData["Title"] = "Modify Account Types";
 }
 
-<h1>Modify account type: @Model.Name</h1>
-
 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-<form asp-action="Modify">
-    <input type="hidden" asp-for="Id" />
-    <div class="mb-3">
-        <label asp-for="Name" class="form-label"></label>
-        <input type="text" asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"></span>
-    </div>
+<br />
+<br />
+<div class="center-div">
+    <div class="card text-dark bg-light mb-3 cardWidth ">
+        <div class="card-header" style="text-align: center; color: midnightblue; "><h1>Modify Account Type: @Model.Name</h1></div>
+        <div class="card-body">
 
-    <button type="submit" class="btn btn-primary">Modify</button>
-    <a class="btn btn-secondary" asp-controller="Home" asp-action="Index">Cancel</a>
-</form>
+            <form asp-action="Modify">
+                <input type="hidden" asp-for="Id" />
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label"></label>
+                    <input type="text" asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div style="text-align: center">
+                    <button type="submit" class="btn btn-primary">Modify</button>
+                    <a class="btn btn-secondary" asp-controller="Home" asp-action="Index">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 @section Scripts {
 <partial name="_ValidationScriptsPartial" />
-}
+    }

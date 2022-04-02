@@ -62,7 +62,7 @@ namespace EconomicManagementAPP.Controllers
             await repositorieOperationTypes.Create(operationTypes);
             // Redireccionamos a la lista
             return RedirectToAction("Index");
-            // return RedirectToAction("Create", "Accounts");
+           
         }
 
 
@@ -84,6 +84,7 @@ namespace EconomicManagementAPP.Controllers
 
             return View(operationType);
         }
+
         [HttpPost]
         public async Task<ActionResult> Modify(OperationTypes operationTypes)
         {
@@ -104,6 +105,7 @@ namespace EconomicManagementAPP.Controllers
             await repositorieOperationTypes.Modify(operationTypes);// el que llega
             return RedirectToAction("Index");
         }
+
         // Eliminar
         [HttpGet]
         public async Task<IActionResult> Delete(int id)

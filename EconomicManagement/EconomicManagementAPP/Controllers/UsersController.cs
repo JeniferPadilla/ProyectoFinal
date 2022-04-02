@@ -38,11 +38,12 @@ namespace EconomicManagementAPP.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel loginViewModel)
         {
-            Console.WriteLine("entro");
+          
             if (!ModelState.IsValid)
             {
                 return View(loginViewModel);
             }
+            
             var result = await repositorieUsers.Login(loginViewModel.Email, loginViewModel.Password);
 
             if (result is null)
@@ -102,13 +103,7 @@ namespace EconomicManagementAPP.Controllers
             //TempData["IdAutentication"] = users.Id;
             //session["idUser"] = users.Id;
             valorSesion = users;
-            //if (string.IsNullOrEmpty(HttpContext.Session.GetString(SessionKeyEmail)))
-            //{
-            //    HttpContext.Session.SetInt32(SessionKeyId, users.Id);
-            //    HttpContext.Session.SetString(SessionKeyEmail, users.Email);
-            //}
-
-            //await signInManager.SignInAsync(users, isPersistent: true);
+            
             return RedirectToAction("Index", "Home");
         }
 
@@ -153,6 +148,7 @@ namespace EconomicManagementAPP.Controllers
             await repositorieUsers.Modify(users);// el que llega
             return RedirectToAction("Index", "Home");
         }
+
         // Eliminar
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
@@ -167,10 +163,11 @@ namespace EconomicManagementAPP.Controllers
 
             return View(user);
         }
+
         [HttpPost]
         public async Task<IActionResult> DeleteUser(int id)
         {
-           
+
             var user = await repositorieUsers.GetUserById(id);
 
             if (user is null)
@@ -181,6 +178,7 @@ namespace EconomicManagementAPP.Controllers
             await repositorieUsers.Delete(id);
             return RedirectToAction("Index");
         }
+
         public IActionResult LogOut()
         {
             

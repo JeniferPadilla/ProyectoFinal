@@ -59,17 +59,6 @@ namespace EconomicManagementAPP.Services
                                                                 new { id });
         }
 
-        /*public async Task<OperationTypes> GetOperationById(int id)
-        {
-            using var connection = new SqlConnection(connectionString);
-            return await connection.QueryFirstOrDefaultAsync<OperationTypes>(@"
-                                                                SELECT [ot].Id, [ot].Description
-                                                                FROM OperationTypes AS [ot]
-                                                                JOIN Categories AS c
-                                                                ON ot.Id=c.OperationTypeId
-                                                                WHERE c.OperationTypeId = @id ",
-                                                                new { id });
-        }*/
 
         public async Task Modify(OperationTypes operationTypes)
         {
