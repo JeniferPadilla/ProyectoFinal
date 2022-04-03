@@ -23,21 +23,6 @@ namespace EconomicManagementAPP.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        //public async Task<IActionResult> AddFounds(int atId, int id)
-        //{
-        //    var accountType = await repositorieAccountTypes.GetAccountById(atId);
-        //    if (accountType is null)
-        //    {
-        //        return RedirectToAction("NotFound", "Home");
-        //    }
-        //    var account = await repositorieAccounts.GetAccountById(id);
-        //    if (account is null)
-        //    {
-        //        return RedirectToAction("NotFound", "Home");
-        //    }
-        //    return View(account);
-        //}
-
 
         public async Task<IActionResult> Create(int id)
         {
@@ -144,10 +129,8 @@ namespace EconomicManagementAPP.Controllers
             {
                 return View(accounts);
             }
-            Console.WriteLine("este es el id de cuenta: " + accounts.Id + "este es el id tipos" + accounts.AccountTypeId);
-            var account = await repositorieAccounts.GetAccountById(accounts.Id);
-            Console.WriteLine("este es el id de cuenta: "+account.Id+ "este es el id tipo" + account.AccountTypeId);
-            if (account is null)
+             var account = await repositorieAccounts.GetAccountById(accounts.Id);
+                if (account is null)
             {
                 return RedirectToAction("NotFound", "Home");
             }
@@ -192,8 +175,6 @@ namespace EconomicManagementAPP.Controllers
             await repositorieAccounts.DeleteModify(id);
             return RedirectToAction("Index", "Home");
         }
-
-
 
     }
 }

@@ -13,6 +13,11 @@ namespace EconomicManagementAPP.Services
         {
             connectionString = configuration.GetConnectionString("DefaultConnection");
         }
+
+        public RepositorieOperationTypes()
+        {
+        }
+
         public async Task Create(OperationTypes operationTypes)
         {
             using var connection = new SqlConnection(connectionString);

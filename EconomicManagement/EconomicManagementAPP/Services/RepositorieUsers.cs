@@ -15,6 +15,9 @@ namespace EconomicManagementAPP.Services
             connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
+        public RepositorieUsers()
+        {}
+
         public async Task<bool> ExistingUser(string Email)
         {
             using var connection = new SqlConnection(connectionString);

@@ -1,11 +1,7 @@
 ﻿using EconomicManagementAPP.Interface;
 using EconomicManagementAPP.Models;
-using EconomicManagementAPP.Services;
-//using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections;
 using Microsoft.AspNetCore.Session;
-//using Microsoft.AspNetCore.Session;
 
 namespace EconomicManagementAPP.Controllers
 {
@@ -20,15 +16,12 @@ namespace EconomicManagementAPP.Controllers
             this.repositorieUsers = repositorieUsers;
         }
 
-        
-
         public IActionResult Create()
         {
             return View();
         }
         
         
-
         [HttpGet]
         public IActionResult Login()
         {

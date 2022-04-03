@@ -11,8 +11,10 @@ namespace EconomicManagementAPP.Validations
             {
                 return new ValidationResult("The password must exits");
             }
+
             string password = value.ToString();
             int length = password.Length;
+
             if (length < 8)
             {
                 return new ValidationResult("The password should have min eight characters");
@@ -20,11 +22,6 @@ namespace EconomicManagementAPP.Validations
 
             Regex rx = new Regex("[0-9]");
 
-
-            if (length < 8)
-            {
-                return new ValidationResult("The password should have min eight characters");
-            }
             Boolean flag = false;
             for (int i = 0; i < length; i++)
             {
@@ -38,7 +35,7 @@ namespace EconomicManagementAPP.Validations
 
             if (!flag)
             {
-                return new ValidationResult("The password should have min one number ");
+                return new ValidationResult("The password should have min one number");
             }
             flag = false;
             Regex rxCapital = new Regex("[A-Z]");
