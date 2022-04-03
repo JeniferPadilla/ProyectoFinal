@@ -33,9 +33,7 @@ body {
 
 body {
     margin-bottom: 60px;
-   // background-image: url(https://th.bing.com/th/id/R.2a6a0e89d8477eb0e0dd3857418c7e69?rik=TDQaNYOvWjQKSw&pid=ImgRaw&r=0);
-   // background-size: cover;
-   background-color:honeydew;
+    background: linear-gradient( #BBF59F, #E9EDE4);
 }
 footer {
     background-color: #70EF99;
@@ -81,4 +79,13 @@ footer {
 .card-header {
     text-align: center;
     color:black;
+}
+.titleHome {
+    font-size: 5rem;
+}
+
+.logout {
+    border-radius: 50%;
+    border: red 1px solid;
+    background: burlywood;
 }

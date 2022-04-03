@@ -28,7 +28,8 @@ namespace EconomicManagementAPP.Controllers
             {
                 return RedirectToAction("Login", "Users");
             }
-            var transactions = await repositorieTransactions.GetTransactions(id);
+            int userId = UsersController.valorSesion.Id;
+            var transactions = await repositorieTransactions.GetTransactions(id, userId);
             return View(transactions);
         }
 

@@ -64,7 +64,7 @@ namespace EconomicManagementAPP.Services
         {
             using var connection = new SqlConnection(connectionString);
             return await connection.QueryFirstOrDefaultAsync<AccountTypes>(@"
-                                                                SELECT [at].Id, Name, UserId, OrderAccount
+                                                                SELECT [at].Id, [at].Name, UserId, OrderAccount
                                                                 FROM AccountTypes AS [at]
                                                                 JOIN Users AS u
                                                                 ON u.Id=[at].UserId

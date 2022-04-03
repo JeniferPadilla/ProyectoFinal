@@ -39,7 +39,9 @@
                             </li>
                             <li class="nav-item">
                                 @*apuntamos al controller asp-controller="AccountTypes" y al view asp-action="Index"*@
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="LogOut">Log Out</a>
+                                <a asp-area="" asp-controller="Users" asp-action="LogOut">
+                                    <img class="logout" src="../../img/cerrar-sesion.png" width="35" height="35">
+                                    </a>
                             </li>
                         }
                         else
@@ -52,7 +54,7 @@
                             <li class="nav-item">
                                 @*apuntamos al controller asp-controller="AccountTypes" y al view asp-action="Index"*@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="Login">
-                                    <img src="https://cdn-icons.flaticon.com/png/512/2354/premium/2354573.png?token=exp=1648925299~hmac=d796b06217861ad38caa1479a54b0f36" width="25" height="25">
+                                    <img src="../../img/login.png" width="25" height="25">
                                     Login</a>
                             </li>
                         }

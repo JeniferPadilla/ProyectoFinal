@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TuMtJnXpx2s9Ciin/HDjDvYq+wNGDQ002T8fi9QEIl0=",
+  "Hash": "heympOjhRJa9SGzhmnIgXT2WzLDwZBKo8S4PoPPYEVs=",
   "Source": "EconomicManagementAPP",
   "BasePath": "_content/EconomicManagementAPP",
   "Mode": "Default",
@@ -119,6 +119,23 @@
       "OriginalItemSpec": "wwwroot\\img\\add.png"
     },
     {
+      "Identity": "C:\\Users\\jkpadillac\\Desktop\\Proyecto\\EconomicManagement\\EconomicManagementAPP\\wwwroot\\img\\cerrar-sesion.png",
+      "SourceId": "EconomicManagementAPP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jkpadillac\\Desktop\\Proyecto\\EconomicManagement\\EconomicManagementAPP\\wwwroot\\",
+      "BasePath": "_content/EconomicManagementAPP",
+      "RelativePath": "img/cerrar-sesion.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\cerrar-sesion.png"
+    },
+    {
       "Identity": "C:\\Users\\jkpadillac\\Desktop\\Proyecto\\EconomicManagement\\EconomicManagementAPP\\wwwroot\\img\\delete.png",
       "SourceId": "EconomicManagementAPP",
       "SourceType": "Discovered",
@@ -168,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\edit-profile.png"
+    },
+    {
+      "Identity": "C:\\Users\\jkpadillac\\Desktop\\Proyecto\\EconomicManagement\\EconomicManagementAPP\\wwwroot\\img\\login.png",
+      "SourceId": "EconomicManagementAPP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jkpadillac\\Desktop\\Proyecto\\EconomicManagement\\EconomicManagementAPP\\wwwroot\\",
+      "BasePath": "_content/EconomicManagementAPP",
+      "RelativePath": "img/login.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\login.png"
     },
     {
       "Identity": "C:\\Users\\jkpadillac\\Desktop\\Proyecto\\EconomicManagement\\EconomicManagementAPP\\wwwroot\\js\\site.js",
