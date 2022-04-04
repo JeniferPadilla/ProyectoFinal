@@ -83,11 +83,8 @@ namespace EconomicManagementAPP.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        [HttpPost]
-        //public async Task<ActionResult> AddFounds()
-        //{
-        //    return RedirectToAction("Index", "Home");
-        //}
+       // [HttpPost]
+        
 
         // Hace que la validacion se active automaticamente desde el front
         [HttpGet]

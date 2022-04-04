@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\EconomicManagement",
-    "\\EconomicManagement\\EconomicManagementAPP"
+    "\\EconomicManagement\\EconomicManagementAPP",
+    "\\EconomicManagement\\EconomicManagementAPP\\Views",
+    "\\EconomicManagement\\EconomicManagementAPP\\Views\\Shared"
   ],
-  "SelectedNode": "\\EconomicManagement\\EconomicManagementAPP.sln",
+  "SelectedNode": "\\EconomicManagement\\EconomicManagementAPP\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }

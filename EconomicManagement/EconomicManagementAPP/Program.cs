@@ -10,7 +10,6 @@ builder.Services.AddTransient<IRepositorieAccountTypes, RepositorieAccountTypes>
 builder.Services.AddTransient<IRepositorieUsers, RepositorieUsers>();
 builder.Services.AddTransient<IRepositorieAccounts, RepositorieAccounts>();
 builder.Services.AddTransient<IRepositorieOperationTypes, RepositorieOperationTypes>();
-//builder.Services.AddHttpContextAccessor();
 builder.Services.AddTransient<IRepositorieCategories, RepositorieCategories>();
 builder.Services.AddTransient<IRepositorieTransactions, RepositorieTransactions>();
 
@@ -32,9 +31,7 @@ app.UseRouting();
 
 app.UseAuthentication();
 
-//app.UseAuthorization();
-
-
+app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",

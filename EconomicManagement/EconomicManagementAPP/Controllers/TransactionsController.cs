@@ -54,8 +54,7 @@ namespace EconomicManagementAPP.Controllers
                 AccountName = accounts.Name,
                 CategoryList = await repositorieCategories.GetCategories(userId)
             };
-            //transactions.AccountId = id;
-            //Console.WriteLine("hola " + transactions.AccountId);
+         
             return View(transactions);
         }
         [HttpPost]
@@ -66,7 +65,7 @@ namespace EconomicManagementAPP.Controllers
                 transactions.CategoryList = await repositorieCategories.GetCategories(UsersController.valorSesion.Id);
                 return View(transactions);
             }
-           // Console.WriteLine("hola "+transactions.CategoryId);
+          
            
             var accounts = await repositorieAccounts.GetAccountById(transactions.AccountId);
 
@@ -98,9 +97,7 @@ namespace EconomicManagementAPP.Controllers
 
                 return View(transactions);
             }
-            //Console.WriteLine(Id);
-            // Redireccionamos a la lista
-            //return RedirectToAction("Index");
+           
             return RedirectToAction("Index", "Transactions", new { id = transactions.AccountId});
         }
 

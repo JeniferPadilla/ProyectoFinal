@@ -19,7 +19,6 @@ namespace EconomicManagementAPP.Controllers
             this.repositorieUsers = repositorieUsers;
         }
 
-
         public async Task<IActionResult> Index()
         {
             if (UsersController.valorSesion is null)
@@ -101,40 +100,6 @@ namespace EconomicManagementAPP.Controllers
             return RedirectToAction("Index", "Categories");
 
         }
-
-        //[HttpGet]
-        //public async Task<IActionResult> Delete(int id)
-        //{
-        //    if (UsersController.valorSesion is null)
-        //    {
-        //        return RedirectToAction("Login", "Users");
-        //    }
-
-        //    var userId = UsersController.valorSesion.Id;
-        //    var categorie = await repositorieCategories.GetCategorieByIds(id, userId);
-
-        //    if (categorie is null)
-        //    {
-        //        return RedirectToAction("NotFound", "Home");
-        //    }
-
-        //    return View(categorie);
-        //}
-
-        //[HttpPost]
-        //public async Task<IActionResult> DeleteCategory(int id)
-        //{
-        //    var userId = UsersController.valorSesion.Id;
-        //    var categorie = await repositorieCategories.GetCategorieByIds(id, userId);
-
-        //    if (categorie is null)
-        //    {
-        //        return RedirectToAction("NotFound", "Home");
-        //    }
-           
-        //    await repositorieCategories.Delete(id);
-        //    return RedirectToAction("Index", "Categories");
-        //}
 
     }
 }
